@@ -14,7 +14,7 @@ spec:
     spec:
       volumes:
       - name: "{{ .Chart.Name }}-pv-storage"
-        persistantVolumeClaim:
+        persistentVolumeClaim:
           claimName: "{{ .Chart.Name }}-pvc"
       containers:
       - name: "{{  .Chart.Name  }}"
